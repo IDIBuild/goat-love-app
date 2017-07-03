@@ -1,0 +1,5 @@
+{
+  "uppercaseValidator":" use english uppercase letter ",
+  "numberValidator":" select at least one number  ",
+  "sixCharactersValidator":"  use max of 6 chars  "
+}

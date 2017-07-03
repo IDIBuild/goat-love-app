@@ -1,0 +1,14 @@
+<md-input-container>
+	<md-radio-group ng-model="vm.ngModel">
+		<md-radio-button ng-required ng-repeat="item in vm.listValues" ng-value="item.key">
+			{{ :: item.value }}
+		</md-radio-button>
+	</md-radio-group>
+	<messages/>
+</md-input-container>
+
+
+<!--fix by ng-invalid and css class !!!!-->
+
+<!--no need to custom ng-class attribute we can use md-checked class attribute-->
+

@@ -1,0 +1,21 @@
+<md-menu md-position-mode="target-right target" id="{{::$this.id}}">
+	<md-button aria-label="Click on button" class="md-icon-button" ng-click="$mdOpenMenu($event)"
+			   data-ng-disabled="$this.isDisabled()">
+		<i class="{{::$this.icon}}" aria-hidden="true"></i>
+	</md-button>
+	<md-menu-content width="4">
+		<md-menu-item ng-repeat="item in $this.menuItems" ng-disabled="item.isEnabled===false">
+			<md-button  ng-click="$this.selectCallback(item)" ng-disabled="item.isEnabled===false">
+				<div layout="row" flex="">
+					<p flex=""> {{item.value}}</p>
+					<div style="pointer-events: auto" class="icon" ng-if="item.isEnabled===false">
+						<md-tooltip md-direction="top">
+							{{item.displayText}}
+						</md-tooltip>
+						<i class="{{item.icon}}"></i>
+					</div>
+				</div>
+			</md-button>
+		</md-menu-item>
+	</md-menu-content>
+</md-menu>
