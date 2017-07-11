@@ -45,6 +45,9 @@ node {
         stage('Deploy'){
 
             echo 'Deploy to Remote Server'
+            sh 'ssh root@docker-nginx rm -rf /usr/share/nginx/html/*'
+            sh 'scp -r dist/* root@docker-nginx:/usr/share/nginx/html'
+
         }
 
     } catch (err) {
