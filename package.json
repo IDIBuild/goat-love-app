@@ -60,6 +60,7 @@
     "webpack-archive-plugin": "^3.0.0",
     "webpack-dev-middleware": "^1.4.0",
     "webpack-hot-middleware": "^2.6.0",
+    "copy-webpack-plugin" : "^4.0.1",
     "yargs": "^3.9.0"
   },
   "scripts": {

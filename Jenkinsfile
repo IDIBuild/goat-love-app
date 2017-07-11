@@ -42,8 +42,9 @@ node {
         }
 
 
-        stage('Cleanup'){
-            echo 'prune and cleanup'
+        stage('Deploy'){
+
+            echo 'Deploy to Remote Server'
         }
 
     } catch (err) {
