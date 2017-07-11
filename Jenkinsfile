@@ -19,7 +19,7 @@ node {
 
 
         stage('Checkout'){
-            git pull: true ,url: 'https://github.com/eladh/goatLove.git'
+            git pull: true ,url: 'https://github.com/IDIBuild/goat-love-app'
         }
 
         stage('Test'){
@@ -40,18 +40,6 @@ node {
             archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
 
         }
-
-        stage('Publish NPM snapshot') {
-             sh 'git reset --hard'
-             sh 'npm version patch'
-             sh 'git push --tags'
-             sh 'cp package.json dist/'
-             dir ('dist') {
-                 sh 'npm publish'
-             }
-             sh 'git push -f origin master'
-        }
-
 
 
         stage('Cleanup'){
