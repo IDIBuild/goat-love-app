@@ -11,7 +11,7 @@
     "angular-messages": "^1.6.0",
     "angular-ui-router": "^0.4.2",
     "angular-input-modified": "^2.4.1",
-    "framework-utils": "^2.0.19",
+    "framework-utils": "latest",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
     "lodash": "^3.10.1",
