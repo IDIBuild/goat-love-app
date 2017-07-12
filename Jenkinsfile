@@ -28,7 +28,7 @@ node {
             print "Environment : ${env.NODE_ENV}"
 
             sh 'node -v'
-            sh 'npm prune'
+            sh 'rm -rf node_modules/'
             sh 'npm install'
             sh 'npm test'
 
