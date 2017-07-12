@@ -28,7 +28,7 @@ node {
             print "Environment : ${env.NODE_ENV}"
 
             sh 'node -v'
-            sh 'rm -rf node_modules/'
+            sh 'npm update'
             sh 'npm install'
             sh 'npm test'
 
