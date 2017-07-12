@@ -40,8 +40,6 @@ node {
             archiveArtifacts artifacts: '*.tar.gz', fingerprint: true
 
         }
-
-
         stage('Deploy'){
 
             echo 'Deploy to Remote Server'
