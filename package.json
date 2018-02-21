@@ -1,7 +1,7 @@
 {
   "name": "goat-love",
   "version": "0.0.2",
-  "description": "Starter for Angular + ES6 + (Webpack or JSPM)",
+  "description": "Angular + ES6 + Webpack",
   "main": "index.js",
   "dependencies": {
     "angular": "^1.6.0",
@@ -15,6 +15,7 @@
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
     "lodash": "^3.10.1",
+    "underscore": "^1.8.3",
     "normalize.css": "^3.0.3",
     "object.entries": "^1.0.4",
     "restangular": "^1.6.1",
